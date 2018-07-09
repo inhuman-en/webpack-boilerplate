@@ -9,8 +9,6 @@ const dirNode = 'node_modules';
 const dirApp = path.join(__dirname, 'app');
 const dirAssets = path.join(__dirname, 'assets');
 
-const appHtmlTitle = 'Webpack Boilerplate';
-
 /**
  * Webpack Configuration
  */
@@ -34,8 +32,7 @@ module.exports = {
         }),
 
         new HtmlWebpackPlugin({
-            template: path.join(__dirname, 'index.ejs'),
-            title: appHtmlTitle
+            template: path.join(__dirname, 'index.html')
         })
     ],
     module: {
